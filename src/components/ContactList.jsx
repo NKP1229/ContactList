@@ -26,19 +26,19 @@ export default function ContactList({ setSelectedContactId }) {
           }
           fetchContacts()
     },[])
-    console.log("Contacts: ", contacts);
+    //console.log("Contacts: ", contacts);
     return ( 
         <table>
           <thead>
             <tr>
-              <th colSpan="3">Contact List</th>
+              <th colSpan="3"><h1>Contact List</h1></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Name</td>
-              <td>Email</td>
-              <td>Phone</td>
+              <td><h2>Name</h2></td>
+              <td><h2>Email</h2></td>
+              <td><h2>Phone</h2></td>
             </tr>
             {
                contacts.map((contacts) => {

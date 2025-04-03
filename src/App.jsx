@@ -5,9 +5,9 @@ import SelectedContact from "./components/SelectedContact";
 function App() {
   const [selectedContactId, setSelectedContactId] = useState(null);
   return (
-    <>
-      {selectedContactId ? (<div>Selected Contact View</div>) : (<ContactList setSelectedContactId={setSelectedContactId} selectedContactId={selectedContactId} />)}
-    </>
+    <div id="page">
+      {selectedContactId ? (<SelectedContact setSelectedContactId={setSelectedContactId} selectedContactId={selectedContactId}/>) : (<ContactList setSelectedContactId={setSelectedContactId} selectedContactId={selectedContactId} />)}
+    </div>
   )
 }
 
